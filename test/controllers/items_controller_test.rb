@@ -1,0 +1,39 @@
+require 'test_helper'
+
+class ItemsControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get items_home_url
+    assert_response :success
+  end
+
+  test "should get index" do
+    get items_index_url
+    assert_response :success
+  end
+
+  test "should get show" do
+    get items_show_url
+    assert_response :success
+  end
+
+  test "should get new" do
+    get items_new_url
+    assert_response :success
+  end
+
+  test "should get create" do
+    get items_create_url
+    assert_response :success
+  end
+
+  test "should get destroy" do
+    get items_destroy_url
+    assert_response :success
+  end
+
+  test "should get purchased" do
+    get items_purchased_url
+    assert_response :success
+  end
+
+end
